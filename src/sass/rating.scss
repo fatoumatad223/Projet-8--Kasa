@@ -1,0 +1,14 @@
+.rating {
+    display: flex;
+    gap: 25px;
+    .stars {
+        object-fit: contain;
+        margin-top: 10px;
+        height: 25px;
+        width: 25px;
+        color:#FF6060;
+    }
+    @media (max-width: 700px) {
+         margin-top: 0;
+    }
+}

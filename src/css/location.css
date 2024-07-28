@@ -1,0 +1,129 @@
+.cardLogement {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.cardLogement .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+@media (max-width: 700px) {
+  .cardLogement .container {
+    margin-top: 5px;
+    flex-direction: column;
+  }
+}
+.cardLogement .container__infoLocation {
+  flex: 1;
+  margin-left: 5px;
+}
+.cardLogement .container__infoLocation--title {
+  color: #FF6060;
+  font-size: 1.7em;
+}
+@media (max-width: 700px) {
+  .cardLogement .container__infoLocation--title {
+    font-size: 1.2em;
+  }
+}
+.cardLogement .container__infoLocation--localisation {
+  margin-top: -10px;
+}
+.cardLogement .container__infoLocation--ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.cardLogement .container__infoLocation--li {
+  border: 1px solid #FF6060;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+@media (max-width: 700px) {
+  .cardLogement .container__infoLocation--li {
+    font-size: 0.6em;
+  }
+}
+.cardLogement .cardOwner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cardLogement .cardOwner__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cardLogement .cardOwner__info--name {
+  display: flex;
+  color: #FF6060;
+  margin-right: 10px;
+  font-size: 1.7em;
+}
+@media (max-width: 700px) {
+  .cardLogement .cardOwner__info--name {
+    font-size: 1em;
+    margin-right: 3px;
+  }
+}
+.cardLogement .cardOwner__info--img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .cardLogement .cardOwner__info--img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.cardLogement .cardOwner .rating {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .cardLogement .cardOwner .mediaQueries {
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 200px;
+    margin-left: 0;
+  }
+  .cardLogement .cardOwner .mediaQueries__info {
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.cardLogement .collapseLocation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+.cardLogement .collapseLocation__description {
+  width: 80%;
+}
+.cardLogement .collapseLocation__equipements {
+  width: 80%;
+}
+@media (max-width: 700px) {
+  .cardLogement .collapseLocation {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardLogement .collapseLocation__description {
+    width: 100%;
+  }
+  .cardLogement .collapseLocation__equipements {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=location.css.map */

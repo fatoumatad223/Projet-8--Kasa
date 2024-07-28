@@ -1,0 +1,44 @@
+.navigation {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+        @media (max-width: 700px) {
+            margin-bottom: 5px;
+        }
+    img{
+        object-fit: contain;
+        height: 50px;
+        width: 130px;
+    }
+
+    nav{
+        ul{
+            display: flex;
+            gap: 30px;
+                @media (max-width: 700px) {
+                    gap: 5px;
+                }
+            a{
+                font-size: 1.5em;
+                text-decoration: none;
+                color: black;
+                &.underline{
+                    text-decoration: underline;
+                }
+                    @media (max-width: 700px) {
+                        font-size: 0.6em;
+                    }
+            }
+            li{
+                margin: 0 20px;
+                list-style: none;
+                font-family: 'Montserrat';
+                    @media (max-width : 700px) {
+                        text-transform: uppercase;
+                        margin: 0 6px;
+                    }
+            }
+        }
+    }
+}

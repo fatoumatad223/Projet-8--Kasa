@@ -1,0 +1,50 @@
+.collapse {
+  margin-bottom: 20px;
+}
+.collapse__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: #FF6060;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 97%;
+  margin: auto;
+  height: 50px;
+}
+@media (max-width: 700px) {
+  .collapse__button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.collapse__button img {
+  margin-left: auto;
+  width: 25px;
+  height: 15px;
+}
+.collapse__button:hover {
+  background: rgb(166, 70, 70);
+}
+.collapse__content {
+  margin: auto;
+  padding: 5px;
+  background: #fafafa;
+  width: 96%;
+  border-radius: 10px;
+}
+.collapse__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=collapse.css.map */

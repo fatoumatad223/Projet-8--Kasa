@@ -1,0 +1,51 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+@media (max-width: 700px) {
+  .navigation {
+    margin-bottom: 5px;
+  }
+}
+.navigation img {
+  object-fit: contain;
+  height: 50px;
+  width: 130px;
+}
+.navigation nav ul {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 700px) {
+  .navigation nav ul {
+    gap: 5px;
+  }
+}
+.navigation nav ul a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+.navigation nav ul a.underline {
+  text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .navigation nav ul a {
+    font-size: 0.6em;
+  }
+}
+.navigation nav ul li {
+  margin: 0 20px;
+  list-style: none;
+  font-family: "Montserrat";
+}
+@media (max-width: 700px) {
+  .navigation nav ul li {
+    text-transform: uppercase;
+    margin: 0 6px;
+  }
+}
+
+/*# sourceMappingURL=navigation.css.map */
