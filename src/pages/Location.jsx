@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import React, { useEffect } from "react";
 
 import Navigation from "../components/Navigation";
 import '../sass/location.scss'
@@ -8,9 +7,7 @@ import Carousel from "../components/Carousel";
 import Rating from "../components/Rating";
 import Footer from "../components/Footer";
 import Error from "./Error";
-
-//import Error from "./Error";
-import { Routes, Route, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import Dataloges from '../data/dataloges.json'
 import Collapse from "../components/Collapse";
@@ -19,7 +16,6 @@ const Location = () => {
 
     // Get the userId param from the URL.
     let { id } = useParams();
-    // const navigate = useNavigate();
 
     const logement = Dataloges.find((element) => element.id == id)
 

@@ -13,10 +13,6 @@ const Carousel = () => {
 
     const logement = Dataloges.find((element) => element.id == id);
 
-    useEffect(() => {
-        setSrc(0);
-    }, [id]);
-
     const previousClick = () => {
         setSrc((prevIndex) =>
             prevIndex === 0 ? logement.pictures.length - 1 : prevIndex - 1
