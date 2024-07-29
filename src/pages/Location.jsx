@@ -19,7 +19,7 @@ const Location = () => {
 
     // Get the userId param from the URL.
     let { id } = useParams();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const logement = Dataloges.find((element) => element.id == id)
 
