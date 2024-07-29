@@ -31,18 +31,24 @@ const Carousel = () => {
 
     return (
         <div className="carousel">
-            <button className="carousel__button carousel__button--left" onClick={previousClick}>
-                <img src={arrowLeft} alt="Image précédente" />
-            </button>
+            {logement.pictures.length > 1 && (
+                <button className="carousel__button carousel__button--left" onClick={previousClick}>
+                    <img src={arrowLeft} alt="Image précédente" />
+                </button>
+            )}
             <div className="carrousel__image--container">
                 <img className="carousel__image" src={logement.pictures[src]} alt="Logement" />
-                <div className="carousel__counter">
-                    {src + 1} / {logement.pictures.length}                          
-                </div>
+                {logement.pictures.length > 1 && (
+                    <div className="carousel__counter">
+                        {src + 1} / {logement.pictures.length}
+                    </div>
+                )}
             </div>
-            <button className="carousel__button carousel__button--right" onClick={nextClick}>
-                <img src={arrowRight} alt="Image suivante" />
-            </button>
+            {logement.pictures.length > 1 && (
+                <button className="carousel__button carousel__button--right" onClick={nextClick}>
+                    <img src={arrowRight} alt="Image suivante" />
+                </button>
+            )}
         </div>
     );
 };

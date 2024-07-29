@@ -21,8 +21,8 @@
                 color: #FF6060;
                 font-size: 1.7em;
 
-                @media (max-width: 700px) {
-                    font-size: 1.2em;
+                @media (min-width: 320px) and (max-width: 700px) {
+                    font-size: 1.4em;
                 }
             }
 
@@ -63,11 +63,16 @@
             align-items: center;
             margin-bottom: 10px;
 
+            @media (max-width: 700px) {
+                justify-content: flex-end;
+            }
+
             &--name {
                 display: flex;
                 color: #FF6060;
                 margin-right: 10px;
                 font-size: 1.7em;
+                text-align: right;
 
                 @media (max-width: 700px) {
                     font-size: 1em;
@@ -77,35 +82,38 @@
 
             &--img {
                 border-radius: 50%;
-                width: 50px;
-                height: 50px;
+                width: 80px;
+                height: 80px;
                 object-fit: cover;
 
                 @media (max-width: 700px) {
-                    width: 30px;
-                    height: 30px;
+                    width: 40px;
+                    height: 40px;
                 }
             }
         }
 
         .rating {
             display: flex;
+            justify-content: flex-end;
             gap: 20px;
+            width: 100%;
 
-            @media (max-width: 700px) {
-                //justify-content: flex-start;
+            @media (min-width: 320px) {
+                justify-content: flex-start;
+                gap: 10px;
+                width: 100%;
+            }
+
+            @media (min-width: 1024px) {
+                justify-content: flex-end;
             }
         }
 
         .mediaQueries {
-            @media (max-width: 700px) {
-                margin: auto;
-                display: flex;
-                flex-direction: row-reverse;
-                gap: 200px;
-                margin-left: 0;
-                //align-items: stretch;
-                //justify-content: space-between;
+            @media (min-width:320px) and (max-width: 780px) {
+                width: 100%;
+                gap: 0;
 
                 &__info {
                     margin: 0;
@@ -113,6 +121,14 @@
                     justify-content: space-between;
                 }
 
+                // margin: auto;
+                // display: flex;
+                // flex-direction: row-reverse;
+
+                // margin-left: 0;
+                // align-items: stretch;
+                // justify-content: space-between;
+                // flex-wrap: wrap;
             }
         }
     }
